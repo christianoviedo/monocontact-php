@@ -2,7 +2,7 @@
     "name": "christianoviedo/monocontact-php",
     "description": "Api connector for Monocontact",
     "type": "library",
-    "license": "GNU General Public License v3.0",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Christian Oviedo",
