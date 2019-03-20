@@ -1,5 +1,5 @@
 {
-    "name": "christianoviedo/monocontact-php",
+    "name": "monocontact/monocontact-php",
     "description": "Api connector for Monocontact",
     "type": "library",
     "license": "GPL-3.0-only",
