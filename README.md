@@ -6,12 +6,14 @@ PHP library for Monocontact's API connection
 
 Use composer to install
 
-    composer require monocontact/monocontact-php
-    composer install
+```
+composer require monocontact/monocontact-php
+composer install
+```
 
 ## Requirements
 
- * A Monocontact account, with API keys enabled. 
- * PHP 5.3 al least
- * PHP Curl extension
+* A Monocontact account, with API keys enabled. 
+* PHP 5.3 al least
+* PHP Curl extension
 
