@@ -6,7 +6,7 @@ use Monocontact\Monocontact;
 
 $m = new Monocontact('t-token-key', 's-secret-key');
 
-// print_r($m->listing->list());
+print_r($m->listing->listing());
 
 // print_r($m->listing->view(71));
 
@@ -20,8 +20,8 @@ $m = new Monocontact('t-token-key', 's-secret-key');
 
 // print_r($m->contact->find(['email'=>'coviedo@tallerdigital.cl']));
 
-print_r($m->subscriber->create([
+/*print_r($m->subscriber->create([
 	'contact' => ['email'=>'juanita.mucho.disero@gmail.com', 'firstname'=>'Juanita', 'lastname'=>'Mucho Dinero'],
 	'listing' => 'Inmobiliaita de la dehesa',
-]));
+]));*/
 

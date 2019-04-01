@@ -10,7 +10,7 @@ class MonoModel {
 		$this->master = $master;
 	}
 
-	public function list() {
+	public function listing() {
 		if (!$this->model) throw new \Exception('You must enter a model');;
 		$_params = ['model'=>$this->model];
 		return $this->master->call('list', $_params);
