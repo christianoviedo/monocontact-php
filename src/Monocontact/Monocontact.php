@@ -56,7 +56,7 @@ class Monocontact {
 		$server_output = curl_exec($this->curl);
 
 		if (curl_getinfo($this->curl, CURLINFO_HTTP_CODE)!='200') {
-			die($server_output);
+			throw new \Exception($server_output);
 		}
 
 		/*curl_setopt($this->curl, CURLOPT_FAILONERROR, true);
