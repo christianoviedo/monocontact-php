@@ -9,14 +9,17 @@ class Monocontact {
 	private $apikey;
 	private $secret;
 	private $curl;
-	// private $apiurl = 'https://manager.monocontact.net/api';
-	private $apiurl = 'http://manager.monocontact.test/api';
+	private $apiurl = 'https://manager.monocontact.net/api';
 
-	public function __construct($apikey=null, $secret=null) {
+	public function __construct($apikey=null, $secret=null, $apiurl=null) {
 		if(!$apikey || !$secret) throw new \Exception('You must provide a Monocontact API key');
 		$this->apikey = $apikey;
 		$this->secret = $secret;
 		$this->curl = curl_init();
+
+		if ($apiurl!=null) {
+			$this->apiurl = $apiurl;
+		}
 
 		curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, true);
 		// curl_setopt($this->curl, CURLOPT_FAILONERROR, true);
