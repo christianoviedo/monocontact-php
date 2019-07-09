@@ -24,7 +24,8 @@ $m = new Monocontact('t-token-key', 's-secret-key', $apiurl);
 
 try {
 	$m->subscriber->create([
-		'contact' => ['email'=>'juanita.mucho.disero@gmail.com', 'firstname'=>'Juanita', 'lastname'=>'Mucho Dinero'],
+		'contact' => ['firstname'=>'Juanita', 'lastname'=>'Mucho Dinero'],
+		//'contact' => ['email'=>'juanita.mucho.disero2@gmail.com', 'firstname'=>'Juanita', 'lastname'=>'Mucho Dinero'],
 		'listing' => 'Inmobiliaita de la dehesa',
 	]);
 }
@@ -34,7 +35,17 @@ catch (Exception $e) {
 
 try {
 	$m->subscriber->create([
-		'contact' => ['email'=>'juanito.poco.dinero@gmail.com', 'firstname'=>'Juanito', 'lastname'=>'Poco Dinero'],
+		'contact' => ['code'=>'12867479-0', 'firstname'=>'Juanito', 'lastname'=>'Poco Dinero'],
+		'listing' => 'Inmobiliaita de la dehesa',
+	]);
+}
+catch (Exception $e) {
+	echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+}
+
+try {
+	$m->subscriber->create([
+		'contact' => ['code'=>'76433976-2', 'firstname'=>'Chr', 'lastname'=>'Ov', 'email'=>'christian.oviedo@gmail.com'],
 		'listing' => 'Inmobiliaita de la dehesa',
 	]);
 }
