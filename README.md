@@ -7,8 +7,16 @@ PHP library for Monocontact's API connection
 Use composer to install
 
 ```
-composer require monocontact/monocontact-php
-composer install
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+composer config minimum-stability dev
+composer.phar require monocontact/monocontact-php
+
+# In your PHP file
+require 'vendor/autoload.php';
+
+# To update
+php composer.phar update
 ```
 
 ## Requirements

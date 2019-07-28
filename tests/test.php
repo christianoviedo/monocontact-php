@@ -35,7 +35,8 @@ catch (Exception $e) {
 
 try {
 	$m->subscriber->create([
-		'contact' => ['code'=>'12867479-0', 'firstname'=>'Juanito', 'lastname'=>'Poco Dinero'],
+		'contact' => ['code'=>'12867478-0', 'firstname'=>'Christian3', 'lastname'=>'Oviedo2'],
+		'custom_fields'   => ['fecha-tarjeta-vecino'=>'2019-01-03 10:59:24'],
 		'listing' => 'Inmobiliaita de la dehesa',
 	]);
 }
@@ -45,7 +46,8 @@ catch (Exception $e) {
 
 try {
 	$m->subscriber->create([
-		'contact' => ['code'=>'76433976-2', 'firstname'=>'Chr', 'lastname'=>'Ov', 'email'=>'christian.oviedo@gmail.com'],
+		'contact' => ['code'=>'76433976-2', 'firstname'=>'Chr2', 'lastname'=>'Ov2', 'email'=>'christian.oviedo@gmail.com'],
+		'custom_fields'   => ['fecha-tarjeta-vecino'=>'2019-01-04 10:59:24'],
 		'listing' => 'Inmobiliaita de la dehesa',
 	]);
 }
