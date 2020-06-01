@@ -22,6 +22,7 @@ class Monocontact {
 		}
 
 		curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($this->curl, CURLOPT_SSL_VERIFYPEER, false);
 		// curl_setopt($this->curl, CURLOPT_FAILONERROR, true);
 /*		curl_setopt($this->curl, CURLOPT_USERAGENT, 'Mandrill-PHP/1.0.54');
 		curl_setopt($this->curl, CURLOPT_POST, true);
